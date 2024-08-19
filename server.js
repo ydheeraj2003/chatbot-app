@@ -8,7 +8,7 @@ const port = 3000;
 app.use(express.json());
 app.use(express.static('public'));
 
-app.post('/query-gemma2:2b', async (req, res) => {
+app.post('/query-gemma2-2b', async (req, res) => {
     const { prompt, history } = req.body;
     let conversation = '';
     if (history && history.length > 0) {
